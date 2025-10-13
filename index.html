@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyEnergetics - Clean, Safe, Reliable Nuclear Power</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font and configure custom colors -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'background-dark': '#232323',
+                        'primary-cyan': '#5bdbfe', // Primary color
+                        'secondary-yellow': '#eccb15', // Secondary color
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for aesthetics on dark background */
+        body {
+            background-color: #232323;
+            color: white;
+            scroll-behavior: smooth; /* Enable smooth scrolling */
+        }
+        /* Custom styles for the form focus state */
+        .form-input-custom:focus {
+            border-color: #5bdbfe !important;
+            box-shadow: 0 0 0 3px rgba(91, 219, 254, 0.5) !important;
+        }
+        .hero-title {
+        	line-height: 1.3;
+        }
+    </style>
+</head>
+
+<body class="bg-background-dark text-white font-sans">
+
+    <!-- Title Bar (Header) -->
+    <header class="sticky top-0 z-50 bg-background-dark/95 backdrop-blur-sm shadow-lg border-b border-primary-cyan/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo and Company Name -->
+                <div class="flex-shrink-0 flex items-center">
+                    <img class="h-8 w-auto rounded-full object-cover" 
+                         src="pe_logo_square.jpeg" 
+                         alt="PolyEnergetics Logo"
+                         onerror="this.onerror=null; this.src='https://placehold.co/32x32/5bdbfe/232323?text=PE';">
+                    <!-- <span class="ml-3 text-xl font-extrabold text-primary-cyan">PolyEnergetics</span> -->
+                </div>
+
+                <!-- Navigation Links -->
+                <nav class="flex space-x-8">
+                    <a href="#solutions" class="text-white hover:text-primary-cyan transition duration-300 font-medium tracking-wider">
+                        Solutions
+                    </a>
+                    <a href="#contact" class="text-white hover:text-primary-cyan transition duration-300 font-medium tracking-wider">
+                        Contact
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="min-h-[80vh] flex items-center justify-center text-center p-8 bg-background-dark/80">
+            <div class="max-w-4xl space-y-6">
+                <h1 class="hero-title text-7xl sm:text-8xl lg:text-9xl font-extrabold tracking-tight" style="background-image: linear-gradient(to right, #5bdbfe, #eccb15); -webkit-background-clip: text; color: transparent;">
+                    PolyEnergetics
+                </h1>
+                <p class="text-xl sm:text-2xl lg:text-3xl text-white font-light mt-4">
+                    Clean, Safe, Reliable solutions for <span class="text-secondary-yellow font-semibold">Nuclear Power</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- Solutions Section -->
+        <section id="solutions" class="py-20 px-4 sm:px-6 lg:px-8 bg-background-dark border-t border-primary-cyan/20">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-16 text-primary-cyan">Solutions</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+
+                    <!-- Product 1: Advanced Operator Training -->
+                    <div class="bg-background-dark border border-primary-cyan/30 rounded-xl shadow-2xl overflow-hidden hover:shadow-primary-cyan/50 transition duration-500 transform hover:scale-[1.02]">
+                        <img class="w-full h-48 object-cover object-center" 
+                             src="https://placehold.co/600x400/5bdbfe/232323?text=Training+Solutions" 
+                             alt="Advanced Operator Training">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-3 text-primary-cyan">Advanced Operator Training</h3>
+                            <p class="text-gray-300 leading-relaxed">
+                                Leveraging virtualized controls rooms and LLM/AI assisted training, these solutions unlock unlimited learning opportunity to operators. Minimal friction to learning, maximum confidence in operation and safety.
+                            </p>
+                            <!-- <a href="#" class="mt-4 inline-block text-secondary-yellow hover:text-white font-medium">Learn More &rarr;</a> -->
+                        </div>
+                    </div>
+
+                    <!-- Product 2: Simulations and Digital Twins -->
+                    <div class="bg-background-dark border border-primary-cyan/30 rounded-xl shadow-2xl overflow-hidden hover:shadow-primary-cyan/50 transition duration-500 transform hover:scale-[1.02]">
+                        <img class="w-full h-48 object-cover object-center" 
+                             src="https://placehold.co/600x400/eccb15/232323?text=Digital+Twins" 
+                             alt="Simulations and Digital Twins">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-3 text-secondary-yellow">Simulations and Digital Twins</h3>
+                            <p class="text-gray-300 leading-relaxed">
+                                Our high-fidelity digital twins mirror physical reactor assets, enabling predictive maintenance, lifecycle modeling, and risk-free testing of operational changes before deployment.
+                            </p>
+                            <!-- <a href="#" class="mt-4 inline-block text-primary-cyan hover:text-white font-medium">Learn More &rarr;</a> -->
+                        </div>
+                    </div>
+
+                    <!-- Product 3: Reactor Design and Optimization -->
+                    <div class="bg-background-dark border border-primary-cyan/30 rounded-xl shadow-2xl overflow-hidden hover:shadow-primary-cyan/50 transition duration-500 transform hover:scale-[1.02]">
+                        <img class="w-full h-48 object-cover object-center" 
+                             src="https://placehold.co/600x400/5bdbfe/232323?text=Reactor+Design" 
+                             alt="Reactor design and optimization">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-3 text-primary-cyan">Reactor Design & Optimization</h3>
+                            <p class="text-gray-300 leading-relaxed">
+                                We utilize advanced computational fluid dynamics (CFD), neutronics codes in combination with AI and genetic algorithms to optimize core geometry, improve fuel utilization, and enhance overall plant efficiency.
+                            </p>
+                            <!-- <a href="#" class="mt-4 inline-block text-secondary-yellow hover:text-white font-medium">Learn More &rarr;</a> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-background-dark border-t border-secondary-yellow/20">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-secondary-yellow">Get In Touch</h2>
+                <p class="text-center text-gray-300 mb-8">
+                    Interested in how PolyEnergetics can power your future? Fill out the form below and we'll connect with you shortly.
+                </p>
+
+                <form class="space-y-6 bg-background-dark p-8 rounded-xl border border-secondary-yellow/30 shadow-2xl shadow-secondary-yellow/20">
+                    <!-- Name Input -->
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-white mb-2">Full Name *</label>
+                        <input type="text" id="name" name="name" required
+                               class="w-full px-4 py-2 border border-gray-600 rounded-lg bg-gray-700 text-white placeholder-gray-400 form-input-custom transition duration-150">
+                    </div>
+
+                    <!-- Email Input -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-white mb-2">Email Address *</label>
+                        <input type="email" id="email" name="email" required
+                               class="w-full px-4 py-2 border border-gray-600 rounded-lg bg-gray-700 text-white placeholder-gray-400 form-input-custom transition duration-150">
+                    </div>
+
+                    <!-- Phone Number Input -->
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-white mb-2">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone"
+                               class="w-full px-4 py-2 border border-gray-600 rounded-lg bg-gray-700 text-white placeholder-gray-400 form-input-custom transition duration-150">
+                    </div>
+
+                    <!-- Message Input -->
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-white mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4"
+                                  class="w-full px-4 py-2 border border-gray-600 rounded-lg bg-gray-700 text-white placeholder-gray-400 form-input-custom transition duration-150"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div>
+                        <button type="submit"
+                                class="w-full py-3 px-4 rounded-lg bg-secondary-yellow text-background-dark font-bold text-lg hover:bg-opacity-80 transition duration-300 shadow-md shadow-secondary-yellow/30">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-background-dark border-t border-primary-cyan/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <p class="text-center text-gray-400 text-sm">
+                &copy; <span id="current-year"></span> PolyEnergetics. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for dynamic year in footer -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
