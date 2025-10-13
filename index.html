@@ -36,9 +36,7 @@
             border-color: #5bdbfe !important;
             box-shadow: 0 0 0 3px rgba(91, 219, 254, 0.5) !important;
         }
-        .hero-title {
-        	line-height: 1.3;
-        }
+        /* Removed .hero-title CSS as its functionality is now handled by responsive Tailwind classes */
     </style>
 </head>
 
@@ -71,10 +69,11 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
+        <!-- Hero Section - NOW FULLY RESPONSIVE -->
         <section class="min-h-[80vh] flex items-center justify-center text-center p-8 bg-background-dark/80">
             <div class="space-y-6">
-                <h1 class="hero-title text-7xl sm:text-8xl lg:text-9xl font-extrabold tracking-tight" style="background-image: linear-gradient(to right, #5bdbfe, #eccb15); -webkit-background-clip: text; color: transparent; line-height: 1.5;">
+                <!-- Added vertical padding (py-4) to prevent the large text from clipping at the top and bottom -->
+                <h1 class="text-5xl sm:text-7xl lg:text-9xl font-extrabold tracking-tight leading-none py-4" style="background-image: linear-gradient(to right, #5bdbfe, #eccb15); -webkit-background-clip: text; color: transparent;">
                     PolyEnergetics
                 </h1>
                 <p class="text-xl sm:text-2xl lg:text-3xl text-white font-light mt-4">
